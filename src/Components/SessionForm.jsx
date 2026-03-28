@@ -29,10 +29,14 @@ const SessionForm = () => {
     <div>
       <Navbar />
 
-      <div className="main flex h-screen">
-        <div className="left w-[50%]">
+      <div className="main flex h-screen justify-cente items-center">
+        <div className="left w-[50%] flex flex-col gap-2 p-1">
           <div className="top">
-            <h1>F</h1>
+            <p className="px-5 py-1 text-[#FFBB43] border-2 border-[#FFBB43] inline bg-amber-50 rounded-2xl">Start your Study</p>
+          </div>
+
+          <div className="middle">
+            <h1 className="text-8xl font-extrabold">Let's Build Your Future</h1>
           </div>
         </div>
 

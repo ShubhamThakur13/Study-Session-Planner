@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { MyContext } from '../Context/SessionContext'
 
 const Navbar = () => {
-      let {setToggle}= useContext(MyContext)
+      let {setToggle, Toggle}= useContext(MyContext)
   return (
     <div className="navbar p-2 flex justify-between items-center bg-amber-100 rounded-2xl absolute w-[98%]">
       <div className="left flex items-center gap-2">
@@ -17,7 +17,7 @@ const Navbar = () => {
           className="text-m font-semibold"
           onClick={() => setToggle((prev) => !prev)}
         >
-          Add Session
+          {Toggle ? `Show Sessions` :`Add Session`}
         </p>
       </div>
     </div>
